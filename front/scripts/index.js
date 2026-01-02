@@ -6,10 +6,11 @@ const { generarEstrellas } = require("./generarEstrellas");
 const contenedorPeliculas = document.querySelector(".grid-peliculas");
 
 const axios = require("axios");
+const apiUrl = process.env.VITE_API_URL || "http://localhost:3000";
 
 async function cargarPeliculas() {
   try {
-    const response = await axios.get("http://localhost:3000/movies");
+    const response = await axios.get(`${apiUrl}/movies`);
     const data = response.data;
 
     const tarjetasTienda = data.map((pelicula, index) => {

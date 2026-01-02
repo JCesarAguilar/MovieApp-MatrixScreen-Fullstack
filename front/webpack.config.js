@@ -1,3 +1,6 @@
+const path = require("path");
+const Dotenv = require("dotenv-webpack");
+
 module.exports = {
   entry: {
     server: "./scripts/index.js",
@@ -5,7 +8,14 @@ module.exports = {
   },
 
   output: {
-    path: __dirname + "/public",
+    path: path.resolve(__dirname, "public"),
     filename: "[name].bundle.js",
   },
+  plugins: [
+    new Dotenv({
+      path: `./.env${
+        process.env.NODE_ENV === "production" ? ".production" : ""
+      }`,
+    }),
+  ],
 };

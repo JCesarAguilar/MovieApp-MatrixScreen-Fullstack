@@ -37,8 +37,10 @@ form.addEventListener("submit", (e) => {
     scene: document.querySelector("#scene").value,
   };
 
+  const apiUrl = process.env.VITE_API_URL || "http://localhost:3000";
+
   axios
-    .post("http://localhost:3000/movies", data)
+    .post(`${apiUrl}/movies`, data)
     .then((response) => {
       console.log("Película creada:", response.data);
       alert(response.data.message); // ← muestra "Película creada exitosamente"
