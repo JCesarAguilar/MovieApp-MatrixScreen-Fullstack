@@ -1,0 +1,14 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "homework de testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Julio Aguilar",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
