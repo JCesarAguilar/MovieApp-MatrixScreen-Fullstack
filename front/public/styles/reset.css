@@ -1,0 +1,53 @@
+/* ====== RESET CSS ====== */
+
+/* 1. Quitar márgenes, paddings y ajustar el modelo de caja */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 2. Hacer que las imágenes no se desborden de su contenedor */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 3. Mejorar la accesibilidad de los formularios */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 4. Eliminar estilos raros de botones y enlaces */
+button, a {
+  background: none;
+  border: none;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 5. Corregir el tamaño de fuente para todos los dispositivos */
+html {
+  font-size: 100%;
+}
+
+/* 6. Eliminar viñetas de listas */
+ul, ol {
+  list-style: none;
+}
+
+/* 7. Configurar cuerpo básico */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* 8. Mejorar el enfoque para la accesibilidad */
+a:focus, button:focus, input:focus, textarea:focus, select:focus {
+  outline: 2px solid blue; /* Puedes personalizar este color */
+  outline-offset: 2px;
+}
