@@ -3,6 +3,8 @@ const Dotenv = require("dotenv-webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
+  mode: "production",
+
   entry: {
     server: "./scripts/index.js",
     form: "./scripts/formulario.js",
@@ -11,6 +13,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "public"),
     filename: "[name].bundle.js",
+    clean: true,
   },
 
   plugins: [
@@ -19,6 +22,7 @@ module.exports = {
         process.env.NODE_ENV === "production" ? ".production" : ""
       }`,
     }),
+
     new HtmlWebpackPlugin({
       template: "./index.html",
       filename: "index.html",
