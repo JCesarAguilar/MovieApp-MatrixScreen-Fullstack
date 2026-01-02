@@ -48,7 +48,7 @@ Crear una plataforma simple y atractiva para:
 - 📦 Webpack
 - 🌱 Dotenv
 - 🌐 Axios
-- 🎨 Boostrap
+- 🎨 Bootstrap
 
 ### **Backend**
 
