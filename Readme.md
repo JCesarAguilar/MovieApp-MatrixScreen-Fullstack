@@ -65,9 +65,9 @@ Crear una plataforma simple y atractiva para:
 | ------------------------------------- | ------------------------------------------- |
 | ![Home](front/public/assets/home.png) | ![History](front/public/assets/history.png) |
 
-| About Us                                       | Formulario                            |
-| ---------------------------------------------- | ------------------------------------- |
-| ![About](front/public/assets/slides/about.png) | ![Form](front/public/assets/form.png) |
+| About Us                                | Formulario                            |
+| --------------------------------------- | ------------------------------------- |
+| ![About](front/public/assets/about.png) | ![Form](front/public/assets/form.png) |
 
 ---
 
